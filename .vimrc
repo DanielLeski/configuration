@@ -1,3 +1,10 @@
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'         
+Plug 'preservim/nerdtree'         
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'         
+call plug
 syntax on 
 set tabstop=2 
 set shiftwidth=2 
@@ -18,4 +25,12 @@ set background=light
 augroup peachpuff | au! 
      autocmd colorscheme peachpuff hi Normal ctermfg=0 ctermbg=223 
 augroup end
+
+set ignorecase
+set smartcase         
+set incsearch
+
+set clipboard=unnamedplus
+vnoremap <leader>y "+y
+set nohlsearch
 
