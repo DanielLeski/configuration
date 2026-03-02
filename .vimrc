@@ -1,10 +1,3 @@
-call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-sensible'         
-Plug 'preservim/nerdtree'         
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-fugitive'         
-call plug
 syntax on 
 set tabstop=2 
 set shiftwidth=2 
